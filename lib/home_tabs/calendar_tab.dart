@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'square_button.dart';
+
 class CalendarTab extends StatelessWidget {
   const CalendarTab({super.key});
 
@@ -8,9 +10,7 @@ class CalendarTab extends StatelessWidget {
     return Container(
       color: Colors.white38,
       child: const Center(
-        child: Text(
-          'Coucou, c\'est le calendrier',
-        ),
+        child: SquareButton(),
       ),
     );
   }
