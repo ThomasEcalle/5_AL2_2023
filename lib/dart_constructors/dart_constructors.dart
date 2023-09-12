@@ -1,15 +1,16 @@
 class User {
-  int? age;
-  String firstName;
-  String lastName;
+  final String firstName;
+  final String lastName;
 
-  User(this.age, {required this.firstName, required this.lastName});
+  const User({
+    required this.firstName,
+    required this.lastName,
+  });
 }
 
 void main() {
-  final toto = User(null, firstName: 'coucou', lastName: 'otot');
-  if(toto.firstName == null) {
-    print('Coucou 1');
-  }
-  print(toto.firstName?.length ?? 'Coucou');
+  const toto = User(firstName: 'coucou', lastName: 'otot');
+  const toto2 = User(firstName: 'coucou', lastName: 'otot');
+
+  print(toto == toto2);
 }
