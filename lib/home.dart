@@ -5,13 +5,24 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.white,
-      child: Center(
-        child: Text(
-          'Coucou',
-          style: Theme.of(context).textTheme.bodyMedium,
-        ),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Coucou'),
+      ),
+      body: Center(
+        child: Text('Salut'),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.calendar_month),
+            label: 'Caendrier',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.search),
+            label: 'Search',
+          ),
+        ],
       ),
     );
   }

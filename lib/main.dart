@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
             color: Colors.green,
             fontSize: 30,
           ),
-        )
+        ),
       ),
       home: Home(),
     );
