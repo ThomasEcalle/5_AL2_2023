@@ -83,7 +83,8 @@ class LayoutsScreen extends StatelessWidget {
                           ],
                         ),
                         Positioned.fill(
-                          child: Center(
+                          child: Align(
+                            alignment: Alignment.bottomCenter,
                             child: Container(
                               height: 100,
                               width: 100,
