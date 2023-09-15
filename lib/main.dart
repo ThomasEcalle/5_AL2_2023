@@ -1,4 +1,5 @@
 import 'package:al2_2023/lists/lists_screen.dart';
+import 'package:al2_2023/webservices/webservices_futurebuilder_screen.dart';
 import 'package:al2_2023/webservices/webservices_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      home: WebservicesScreen(),
+      home:const  WebservicesFutureBuilderScreen()
     );
   }
 }

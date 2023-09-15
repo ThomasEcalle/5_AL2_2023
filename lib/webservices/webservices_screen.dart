@@ -14,7 +14,6 @@ class WebservicesScreen extends StatefulWidget {
 class _WebservicesScreenState extends State<WebservicesScreen> {
   bool _loading = true;
   String? _error;
-
   final List<RemoteUser> _users = [];
 
   @override
@@ -26,7 +25,6 @@ class _WebservicesScreenState extends State<WebservicesScreen> {
   void _fetchUsers() async {
     try {
       await Future.delayed(const Duration(seconds: 2));
-      throw Exception();
       final response = await http.get(Uri.parse('https://reqres.in/api/users?page=1&per_page=5'));
       final jsonBody = json.decode(response.body);
 
